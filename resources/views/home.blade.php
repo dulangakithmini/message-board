@@ -3,5 +3,9 @@
 @section('title', 'HomePage')
 
 @section('content')
-<h1>Content!</h1>
+Recent messages:
+<ul>
+    This is a recent message
+</ul>
+<!--<h1>Content!</h1>-->
 @endsection
