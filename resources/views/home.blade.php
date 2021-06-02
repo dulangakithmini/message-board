@@ -6,7 +6,7 @@
 Recent messages:
 <ul>
     @foreach ($messages as $message)
-    <li>{{ $message->title }} - {{ $message->content }}</li>
+    <li>{{ $message->title }} - {{ $message->content }} - {{ $message->created_at }}</li>
     @endforeach
 </ul>
 <!--<h1>Content!</h1>-->
