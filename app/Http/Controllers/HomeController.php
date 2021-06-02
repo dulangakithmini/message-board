@@ -9,7 +9,7 @@ class HomeController extends Controller
     public function index()
     {
         //Grabs every single row in the messages table
-        Message::all();
+        $messages = Message::all();
 
         return view('home');
     }
