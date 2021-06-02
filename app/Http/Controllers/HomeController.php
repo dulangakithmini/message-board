@@ -11,6 +11,11 @@ class HomeController extends Controller
         //Grabs every single row in the messages table
         $messages = Message::all();
 
+        foreach ($messages as $message) {
+            echo $message->title;
+        }
+        die;
+
         return view('home');
     }
 }
