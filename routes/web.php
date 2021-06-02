@@ -19,6 +19,7 @@
 
 Route::get('/', 'HomeController@index');
 
+
 Route::get('/about', function () {
     echo 'Hello';
 
