@@ -5,7 +5,9 @@
 @section('content')
 Recent messages:
 <ul>
-    This is a recent message
+    @foreach ($messages as $message)
+    <li>{{ $message->title }} - {{ $message->content }}</li>
+    @endforeach
 </ul>
 <!--<h1>Content!</h1>-->
 @endsection
