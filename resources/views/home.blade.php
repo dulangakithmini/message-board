@@ -7,8 +7,9 @@
 Post a message:
 
 <form action="/create" method="post">
-    <input type="text" id="title" placeholder="Title">
-    <input type="text" id="content" placeholder="Content">
+    <input type="text" name="title" placeholder="Title">
+    <input type="text" name="content" placeholder="Content">
+    {{ csrf_field() }}
     <button type="submit">Submit</button>
 </form>
 

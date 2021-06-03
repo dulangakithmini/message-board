@@ -19,6 +19,7 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::post('/create', 'MessageController@create');
 
 Route::get('/about', function () {
     echo 'Hello';
